@@ -35,6 +35,7 @@ module.exports = grunt => {
     sass: {
       dev: {
         files: {
+          "css/common.css"  : "scss/common.scss",
           "css/header.css"  : "scss/header.scss",
           "css/home.css"    : "scss/home.scss",
           "css/about.css"   : "scss/about.scss",
