@@ -1,6 +1,20 @@
-footer{
-  @extend %j-c;
-  height: 60px;
-  width: 100%;
-  background: #0ef;  
+footer {
+  max-width: 800px;
+  margin:auto;
+  border-top: 1px dashed #28ca9f;
+  margin-top: 40px;
+  ul {
+    list-style:  none;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+      a {
+        color: #28ca9f;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

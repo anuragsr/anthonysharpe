@@ -1,21 +1,24 @@
-body { 
+body {
   overflow: hidden;
-  // font-family: 'Courier New', Courier, monospace;
-  // background: black;
 }
 
-.mobile-only{
-	@include media('>mob') { display: none; }	
+@media (min-width: 551px) {
+  .mobile-only {
+    display: none;
+  }
 }
 
-.desktop-only{
-	@include media('<=mob') { display: none; }
+@media (max-width: 550px) {
+  .desktop-only {
+    display: none;
+  }
 }
 
-input:focus{ outline: none; }
+input:focus {
+  outline: none;
+}
 
 /* Loading Screen Styling */
-
 .loading-screen {
   position: relative;
   padding-left: 0;
@@ -42,10 +45,11 @@ input:focus{ outline: none; }
 /* Common heading container */
 .heading-container {
   max-width: 800px;
-  margin:auto;
+  margin: auto;
   position: relative;
   padding-top: 40px;
 }
+
 .heading-container img.main-img {
   position: absolute;
   right: -140px;
@@ -68,7 +72,6 @@ input:focus{ outline: none; }
 }
 
 /* Cool green stripe Styling */
-
 .heading-container h1 span.green-heading-bg {
   display: inline;
   z-index: -1;
@@ -90,3 +93,5 @@ input:focus{ outline: none; }
 .heading-container h1 i {
   font-size: 100px;
 }
+
+/*# sourceMappingURL=about.css.map */

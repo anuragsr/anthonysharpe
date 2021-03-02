@@ -1,0 +1,22 @@
+footer {
+  max-width: 800px;
+  margin: auto;
+  border-top: 1px dashed #28ca9f;
+  margin-top: 40px;
+}
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer ul li a {
+  color: #28ca9f;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=footer.css.map */

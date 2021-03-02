@@ -1,20 +1,25 @@
-.navbar{
-  padding-top: 40px;
-  background: $w;
-  .navbar-brand{
-    display: flex;
-    img{ height: 58px; }
-    .ctn-heading{
-      margin-left: 22px;
-      .title{
-        font-size: 24px;
-        line-height: 36px;
-        color: $pr; 
-      }
-      .sub-title{
-        font-size: 14px;
-        line-height: 21px;
-        color: $sc; 
+header{
+  nav {
+    position: fixed;
+    z-index: 9;
+    text-align: right;
+    width: 100%;
+    padding: 30px 100px;
+    top: 0px;
+    transform: translateY(0);
+    opacity: 1;
+    ul{
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding-left: 20px;
+        margin-left: 20px;
+        &:first-child{
+          margin-left: 0;
+          padding-left: 0
+        }
       }
     }
   }

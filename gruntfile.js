@@ -1,32 +1,23 @@
 module.exports = grunt => {
   grunt.initConfig({
-    connect: {
-      server:{
-        options: {  
-          open: true,
-          hostname: "127.0.0.1",
-          port: 8080
-        }
-      }
-    },
     // Watches for changes and runs tasks
-    // Livereload is setup for the 35729 port by default    
+    // Livereload is setup for the 35729 port by default
     watch: {
       options: {
-        interval: 0,
+        interval: 1000,
         dateFormat: function(time) {
-          // grunt.log.writeln('Completed in ' + time + 'ms at' + (new Date()).toString())
-          grunt.log.writeln('Ready.'["blue"].bold)
+          // grunt.log.writeln('Completed in ' + time + 'ms at' + (new Date()).toString());
+          grunt.log.writeln('Ready.'["blue"].bold);
         },
-      },
-      html: {
-        files: ["**/*.html",  "!node_modules/*.*"],
-        options: { livereload: true }
       },
       sass: {
         files: ["**/*.scss",  "!node_modules/*.*"],
         tasks: ["sass:dev"]
-      },      
+      },
+      php: {
+        files: ["**/*.php",  "!node_modules/*.*"],
+        options: { livereload: true }
+      },
       js: {
         files: ["**/*.js",  "!node_modules/*.*"],
         options: { livereload: true }
@@ -43,8 +34,12 @@ module.exports = grunt => {
     // Sass object
     sass: {
       dev: {
-        files: {   
-          "css/style-home.css": "scss/style-home.scss",
+        files: {
+          "css/header.css": "scss/header.scss",
+          "css/home.css": "scss/home.scss",
+          "css/about.css": "scss/about.scss",
+          "css/contact.css": "scss/contact.scss",
+          "css/footer.css": "scss/footer.scss",
         },
         options: {
           style: "expanded",
@@ -52,13 +47,12 @@ module.exports = grunt => {
         }
       }
     }
-  })
+  });
 
   // Default task
-  grunt.registerTask("default", ["connect","watch"])
+  grunt.registerTask("default", ["watch"]);
 
   // Load up tasks
-  grunt.loadNpmTasks("grunt-contrib-sass")
-  grunt.loadNpmTasks("grunt-contrib-watch")
-  grunt.loadNpmTasks('grunt-contrib-connect')
+  grunt.loadNpmTasks("grunt-contrib-sass");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 }
