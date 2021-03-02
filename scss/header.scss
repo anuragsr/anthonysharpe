@@ -1,26 +1,14 @@
-header{
-  nav {
-    position: fixed;
-    z-index: 9;
-    text-align: right;
-    width: 100%;
-    padding: 30px 100px;
-    top: 0px;
-    transform: translateY(0);
-    opacity: 1;
-    ul{
-      list-style: none;
-      padding: 0;
-      text-align: center;
-      li {
-        display: inline-block;
-        padding-left: 20px;
-        margin-left: 20px;
-        &:first-child{
-          margin-left: 0;
-          padding-left: 0
-        }
-      }
-    }
+@import './vars';
+@import './include-media';
+nav{
+  a.navbar-brand{
+    img{ height: 50px; }
   }
+  // font-family: $lato;
+  // font-weight: 500;
+  // &.navbar-dark{
+  //   .navbar-nav{
+  //     .nav-link{ color: $w; }
+  //   }
+  // }  
 }

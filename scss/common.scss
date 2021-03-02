@@ -1,21 +1,14 @@
+html, body, .ctn-outer, .ctn-outer main { @extend %fhw; }
 body { 
   overflow: hidden;
-  // font-family: 'Courier New', Courier, monospace;
-  // background: black;
+  font-family: $pop;
+  background: $bg;
 }
-
-.mobile-only{
-	@include media('>mob') { display: none; }	
-}
-
-.desktop-only{
-	@include media('<=mob') { display: none; }
-}
-
+.mobile-only{ @include media('>mob') { display: none; }	 }
+.desktop-only{ @include media('<=mob') { display: none; } }
 input:focus{ outline: none; }
 
-/* Loading Screen Styling */
-
+// Loading Screen Styling
 .loading-screen {
   position: relative;
   padding-left: 0;
@@ -24,10 +17,9 @@ input:focus{ outline: none; }
   background-color: #4BEDC2;
   width: 100%;
   height: 100%;
-  transform: scaleY(0) skewX(0);
-  transform-origin: top left;
+  // transform: scaleY(0) skewX(0);
+  // transform-origin: top left;
 }
-
 .loading-container {
   position: fixed;
   top: 0;
@@ -35,8 +27,21 @@ input:focus{ outline: none; }
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: 10;
+  z-index: 1031;
   pointer-events: none;
+}
+
+// Nav common
+.navbar{
+  padding: 50px 70px;
+  font-family: $lato;
+  font-weight: 500;
+  &.navbar-dark{
+    .navbar-nav{
+      .nav-item,
+      .nav-link{ color: $w; }
+    }
+  }
 }
 
 /* Common heading container */
@@ -54,8 +59,8 @@ input:focus{ outline: none; }
   opacity: 1;
   transform: translateY(0);
 }
-
 .heading-container h1 {
+  color: $w;
   font-size: 100px;
   line-height: 100px;
   padding: 50px;
@@ -66,9 +71,7 @@ input:focus{ outline: none; }
   position: relative;
   z-index: 9;
 }
-
 /* Cool green stripe Styling */
-
 .heading-container h1 span.green-heading-bg {
   display: inline;
   z-index: -1;
@@ -82,11 +85,9 @@ input:focus{ outline: none; }
   padding-right: 0.55rem;
   transition: background-size 1s 1.5s ease;
 }
-
 .heading-container h1 span.green-heading-bg.show {
   background-size: 100% 40%;
 }
-
 .heading-container h1 i {
   font-size: 100px;
 }

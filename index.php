@@ -10,7 +10,7 @@
     <?php include 'partials/header.php'; ?>   
 
     <!-- Better to wrap barba container as close as possible -->
-    <div data-barba="wrapper">
+    <div class="ctn-outer" data-barba="wrapper">
       <!-- Only this section changes on link navigation -->
       <main data-barba="container" data-barba-namespace="home">
         <div class="heading-container">

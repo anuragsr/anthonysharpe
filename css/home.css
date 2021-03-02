@@ -1,5 +1,12 @@
+html, body, .ctn-outer, .ctn-outer main {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   overflow: hidden;
+  font-family: "Poppins";
+  background: #222;
 }
 
 @media (min-width: 551px) {
@@ -18,7 +25,6 @@ input:focus {
   outline: none;
 }
 
-/* Loading Screen Styling */
 .loading-screen {
   position: relative;
   padding-left: 0;
@@ -27,8 +33,6 @@ input:focus {
   background-color: #4BEDC2;
   width: 100%;
   height: 100%;
-  transform: scaleY(0) skewX(0);
-  transform-origin: top left;
 }
 
 .loading-container {
@@ -38,8 +42,18 @@ input:focus {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: 10;
+  z-index: 1031;
   pointer-events: none;
+}
+
+.navbar {
+  padding: 50px 70px;
+  font-family: "Lato";
+  font-weight: 500;
+}
+.navbar.navbar-dark .navbar-nav .nav-item,
+.navbar.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
 }
 
 /* Common heading container */
@@ -60,6 +74,7 @@ input:focus {
 }
 
 .heading-container h1 {
+  color: #fff;
   font-size: 100px;
   line-height: 100px;
   padding: 50px;

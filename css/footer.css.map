@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/footer.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AACA;EACE;EACA;;AACA;EACE;EACA;;AACA;EACE;;AACA;EACE","file":"footer.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/footer.scss","../scss/vars.scss"],"names":[],"mappings":"AAII;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA;EAAW;EACX,YCbJ","file":"footer.css"}

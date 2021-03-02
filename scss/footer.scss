@@ -1,20 +1,27 @@
+@import './vars';
+@import './include-media';
 footer {
-  max-width: 800px;
-  margin:auto;
-  border-top: 1px dashed #28ca9f;
-  margin-top: 40px;
-  ul {
-    list-style:  none;
-    text-align: center;
-    li {
+  .navbar-nav{
+    .outer-link{
       display: inline-block;
-      margin-right: 20px;
-      a {
-        color: #28ca9f;
-        &:hover {
-          text-decoration: underline;
-        }
+      position: relative;
+      padding: 0!important;
+      &:after{
+        content: " ";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0; left: 0;
+        background: $w;
       }
     }
   }
+  // font-family: $lato;
+  // font-weight: 500;
+  // &.navbar-dark{
+  //   .navbar-nav{
+  //     .nav-item,
+  //     .nav-link{ color: $w; }
+  //   }
+  // }
 }

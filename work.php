@@ -10,11 +10,11 @@
     <?php include 'partials/header.php'; ?>   
 
     <!-- Better to wrap barba container as close as possible -->
-    <div data-barba="wrapper">
+    <div class="ctn-outer" data-barba="wrapper">
       <!-- Only this section changes on link navigation -->
       <main data-barba="container" data-barba-namespace="about">
         <div class="heading-container">
-          <h1 class="main-heading is-animated">This is<br><span class="green-heading-bg">the about</span><br>screen.<br></h1>
+          <h1 class="main-heading is-animated">This is<br><span class="green-heading-bg">the work</span><br>screen.<br></h1>
           <img src="img/hand-2.png" class="main-img is-animated">
         </div>
       </main>

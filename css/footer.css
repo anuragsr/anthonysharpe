@@ -1,22 +1,16 @@
-footer {
-  max-width: 800px;
-  margin: auto;
-  border-top: 1px dashed #28ca9f;
-  margin-top: 40px;
-}
-footer ul {
-  list-style: none;
-  text-align: center;
-}
-footer ul li {
+footer .navbar-nav .outer-link {
   display: inline-block;
-  margin-right: 20px;
+  position: relative;
+  padding: 0 !important;
 }
-footer ul li a {
-  color: #28ca9f;
-}
-footer ul li a:hover {
-  text-decoration: underline;
+footer .navbar-nav .outer-link:after {
+  content: " ";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
 }
 
 /*# sourceMappingURL=footer.css.map */
