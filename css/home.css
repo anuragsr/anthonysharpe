@@ -1,3 +1,80 @@
+.ctn-home .ctn-content, .ctn-home video, .ctn-home .vid-ol {
+  height: 100%;
+  width: 100%;
+}
 
+.ctn-home .ctn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn-home .vid-ol {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ctn-home video {
+  position: relative;
+  z-index: 1;
+  width: 177.77777778vh;
+  /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw;
+  /* 100 * 9 / 16 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ctn-home .ctn-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  flex-direction: column;
+  z-index: 3;
+}
+.ctn-home .ctn-content .tickerwrapper {
+  /* the outer div */
+  position: relative;
+  height: 240px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 180px;
+  -webkit-text-stroke: 0.1rem #fff;
+  color: transparent;
+  width: 99.9%;
+  overflow: hidden;
+}
+.ctn-home .ctn-content .tickerwrapper ul.list {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ctn-home .ctn-content .tickerwrapper ul.list.cloned {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.ctn-home .ctn-content .tickerwrapper ul.list li {
+  float: left;
+  padding-left: 20px;
+}
+.ctn-home .ctn-content .tickerwrapper ul.list li .stroke {
+  font-weight: 100;
+  font-size: 120px;
+  -webkit-text-stroke: 0;
+  color: #fff;
+  position: relative;
+  top: -15px;
+}
+.ctn-home .ctn-content h2 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 
 /*# sourceMappingURL=home.css.map */

@@ -7,7 +7,7 @@
   </ul>
   <ul class="navbar-nav my-2 my-lg-0">
     <li class="nav-item">
-      <span>Realisation</span>
+      <span>Réalisation</span>
       <a class="nav-link outer-link" target="_blank" href="http://yourra.fr">Yourra!</a>
     </li>  
   </ul>

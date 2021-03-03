@@ -2,6 +2,9 @@
 @import './include-media';
 footer {
   .navbar-nav{
+    font-family: $lato;
+    letter-spacing: normal;
+    font-weight: 400;
     .outer-link{
       display: inline-block;
       position: relative;

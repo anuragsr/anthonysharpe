@@ -15,7 +15,6 @@
       <main data-barba="container" data-barba-namespace="contact">
         <div class="heading-container">
           <h1 class="main-heading is-animated">This is<br><span class="green-heading-bg">the contact</span><br>screen.<br></h1>
-          <img src="img/hand-2.png" class="main-img is-animated">
         </div>
       </main>
     </div>

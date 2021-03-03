@@ -4,6 +4,22 @@ html, body, .ctn-outer, .ctn-outer main {
 }
 
 body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
   overflow: hidden;
   font-family: "Poppins";
   background: #222;
@@ -30,7 +46,7 @@ input:focus {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  background-color: #4BEDC2;
+  background-color: #701515;
   width: 100%;
   height: 100%;
 }
@@ -48,8 +64,9 @@ input:focus {
 
 .navbar {
   padding: 50px 70px;
-  font-family: "Lato";
   font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 2px;
 }
 .navbar.navbar-dark .navbar-nav .nav-item,
 .navbar.navbar-dark .navbar-nav .nav-link {
@@ -90,7 +107,7 @@ input:focus {
 .heading-container h1 span.green-heading-bg {
   display: inline;
   z-index: -1;
-  background-image: linear-gradient(#4BEDC2, #4BEDC2);
+  background-image: linear-gradient(#701515, #701515);
   background-position: 0 80%;
   background-repeat: no-repeat;
   background-size: 0 40%;
