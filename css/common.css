@@ -23,6 +23,17 @@ body {
   overflow: hidden;
   font-family: "Poppins";
   background: #222;
+  --color-text: #5d5d5d;
+  --color-bg: #222;
+  --color-link: #838288;
+  --color-link-hover: #000;
+  --color-number: #fff;
+  --color-title: #fff;
+  --color-caption: #fff;
+  --color-content: #fff;
+  --color-content-bg: var(--color-bg);
+  --color-reveal-bg: var(--color-bg);
+  --color-content-title: #fff;
 }
 
 @media (min-width: 551px) {

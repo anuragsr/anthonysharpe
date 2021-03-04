@@ -6,6 +6,23 @@ body {
   font-family: $pop;
   background: $bg;
   @extend %ns;
+  
+  --color-text: #5d5d5d;
+	// --color-bg: #e6e6ea;
+	--color-bg: #222;
+	--color-link: #838288;
+	--color-link-hover: #000;
+	// --color-number: #000;
+	// --color-title: #000;
+	// --color-caption: #000;
+	// --color-content: #000;
+	--color-number: #fff;
+	--color-title: #fff;
+	--color-caption: #fff;
+	--color-content: #fff;
+	--color-content-bg: var(--color-bg);
+	--color-reveal-bg: var(--color-bg);
+  --color-content-title: #fff;
 }
 .mobile-only{ @include media('>mob') { display: none; }	 }
 .desktop-only{ @include media('<=mob') { display: none; } }

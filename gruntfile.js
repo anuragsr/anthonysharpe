@@ -38,7 +38,7 @@ module.exports = grunt => {
           "css/common.css"  : "scss/common.scss",
           "css/header.css"  : "scss/header.scss",
           "css/home.css"    : "scss/home.scss",
-          "css/about.css"   : "scss/about.scss",
+          "css/work.css"   : "scss/work.scss",
           "css/contact.css" : "scss/contact.scss",
           "css/footer.css"  : "scss/footer.scss",
         },

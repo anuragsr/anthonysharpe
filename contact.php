@@ -6,7 +6,7 @@
   <title>PWL | Contact</title>  
 </head>
 
-  <body>
+  <body class="js">
     <?php include 'partials/header.php'; ?>   
 
     <!-- Better to wrap barba container as close as possible -->

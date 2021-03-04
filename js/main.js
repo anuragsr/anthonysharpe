@@ -1,6 +1,5 @@
 const l = console.log.bind(window.console)
 , loadingScreen = document.querySelector('.loading-screen')
-
 // Function to add the page transition screen
 , pageTransitionIn = () => {
   return gsap
@@ -40,7 +39,15 @@ const l = console.log.bind(window.console)
   })
   
   switch(namespace){
-    case 'work': break;
+    case 'work': 
+
+      // Revealer element
+      revealer = new Revealer(document.querySelector('.revealer__inner'));
+      // Initialize the slideshow
+      new Slideshow(document.querySelector('.grid--slideshow'));
+
+    break;
+
     case 'contact': break;
     
     default: // home
