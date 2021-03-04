@@ -99,28 +99,28 @@
           <figure class="grid__item grid__item--slide">
             <span class="number">01</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/1.jpg);"></div>
+              <div class="img" style="background-image: url(img/1.gif);"></div>
             </div>
             <figcaption class="caption">New York City, March 24</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">02</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/2.jpg);"></div>
+              <div class="img" style="background-image: url(img/2.gif);"></div>
             </div>
             <figcaption class="caption">Acapulco, March 25</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">03</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/3.jpg);"></div>
+              <div class="img" style="background-image: url(img/3.gif);"></div>
             </div>
             <figcaption class="caption">Brisbane, March 26</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">04</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/4.jpg);"></div>
+              <div class="img" style="background-image: url(img/4.gif);"></div>
             </div>
             <figcaption class="caption">Berlin, March 27</figcaption>
           </figure>
