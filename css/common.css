@@ -54,12 +54,12 @@ input:focus {
 
 .loading-screen {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
   background-color: #701515;
-  width: 100%;
-  height: 100%;
+  width: 175%;
+  height: 175%;
+  left: -15%;
+  top: -15%;
+  transform: rotateZ(14.5deg);
 }
 
 .loading-container {
@@ -84,57 +84,11 @@ input:focus {
   color: #fff;
 }
 
-/* Common heading container */
-.heading-container {
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  padding-top: 40px;
+.loading .loading-container {
+  pointer-events: auto;
 }
-
-.heading-container img.main-img {
-  position: absolute;
-  right: -140px;
-  top: 80px;
-  width: 60%;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.heading-container h1 {
-  color: #fff;
-  font-size: 100px;
-  line-height: 100px;
-  padding: 50px;
-  top: 50px;
-  margin-top: 20px;
-  transform: translateY(0);
-  opacity: 1;
-  position: relative;
-  z-index: 9;
-}
-
-/* Cool green stripe Styling */
-.heading-container h1 span.green-heading-bg {
-  display: inline;
-  z-index: -1;
-  background-image: linear-gradient(#701515, #701515);
-  background-position: 0 80%;
-  background-repeat: no-repeat;
-  background-size: 0 40%;
-  margin-left: -0.55rem;
-  margin-right: -0.55rem;
-  padding-left: 0.55rem;
-  padding-right: 0.55rem;
-  transition: background-size 1s 1.5s ease;
-}
-
-.heading-container h1 span.green-heading-bg.show {
-  background-size: 100% 40%;
-}
-
-.heading-container h1 i {
-  font-size: 100px;
+.loading .ctn-contact .grid {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=common.css.map */

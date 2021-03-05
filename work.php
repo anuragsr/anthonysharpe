@@ -1,22 +1,20 @@
 <!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <?php include 'partials/styles.php'; ?>   
-  <title>PWL | Work</title>  
-</head>
+<html>
+  <head>
+    <?php include 'partials/styles.php'; ?>   
+    <title>PWL | Work</title>  
+  </head>
 
   <body class="js">
     <?php include 'partials/header.php'; ?>   
 
-    <!-- Better to wrap barba container as close as possible -->
     <div class="ctn-outer" data-barba="wrapper">
-      <!-- Only this section changes on link navigation -->
+      <!-- This section changes on link navigation -->
       <main class="ctn-work" data-barba="container" data-barba-namespace="work">
         <div class="content">
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/1.jpg);"></div>
+              <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div>
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">New York City, March 24</span>
@@ -35,7 +33,7 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/2.jpg);"></div>
+              <div class="img img--content" style="background-image: url(img/work/2.jpg);"></div>
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Acapulco, March 25</span>
@@ -55,7 +53,7 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/3.jpg);"></div>
+              <div class="img img--content" style="background-image: url(img/work/3.jpg);"></div>
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Brisbane, March 26</span>
@@ -74,7 +72,7 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/4.jpg);"></div>
+              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Berlin, March 27</span>
@@ -99,28 +97,28 @@
           <figure class="grid__item grid__item--slide">
             <span class="number">01</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/1.gif);"></div>
+              <div class="img" style="background-image: url(img/work/1.gif);"></div>
             </div>
             <figcaption class="caption">New York City, March 24</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">02</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/2.gif);"></div>
+              <div class="img" style="background-image: url(img/work/2.gif);"></div>
             </div>
             <figcaption class="caption">Acapulco, March 25</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">03</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/3.gif);"></div>
+              <div class="img" style="background-image: url(img/work/3.gif);"></div>
             </div>
             <figcaption class="caption">Brisbane, March 26</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">04</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/4.gif);"></div>
+              <div class="img" style="background-image: url(img/work/4.gif);"></div>
             </div>
             <figcaption class="caption">Berlin, March 27</figcaption>
           </figure>

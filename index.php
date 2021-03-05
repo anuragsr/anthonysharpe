@@ -1,17 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <?php include 'partials/styles.php'; ?>   
-  <title>PWL | Home</title>  
-</head>
+<html>
+  <head>
+    <?php include 'partials/styles.php'; ?>   
+    <title>PWL | Home</title>  
+  </head>
 
   <body class="js">
     <?php include 'partials/header.php'; ?>   
 
-    <!-- Better to wrap barba container as close as possible -->
     <div class="ctn-outer" data-barba="wrapper">
-      <!-- Only this section changes on link navigation -->
+      <!-- This section changes on link navigation -->
       <main class="ctn-home" data-barba="container" data-barba-namespace="home">
         <div class="vid-ol"></div>
         <video loop="true" autoplay="autoplay" muted>
