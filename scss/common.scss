@@ -1,15 +1,18 @@
 @import './vars';
 @import './include-media';
-html, body, .ctn-outer, .ctn-outer main { @extend %fhw; }
-body { 
+html, body, .ctn-outer, .ctn-outer main { 
+  @extend %fhw; 
   overflow: hidden;
+  position: relative;
+}
+body { 
   font-family: $pop;
   background: $bg;
   @extend %ns;
   
   --color-text: #5d5d5d;
 	// --color-bg: #e6e6ea;
-	--color-bg: #222;
+	--color-bg: #111;
 	--color-link: #838288;
 	--color-link-hover: #000;
 	// --color-number: #000;
@@ -29,30 +32,42 @@ body {
 input:focus{ outline: none; }
 
 // Loading Screen Styling
-.loading-screen {
-  position: relative;
-  background-color: #701515;
-  width: 175%;
-  height: 175%;
-  left: -15%;
-  top: -15%;
-  transform: rotateZ(14.5deg);
-  // opacity: .6;
-}
 .loading-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: 1031;  
   pointer-events: none;
+  .loading-screen {
+    position: relative;
+    background-color: #701515;
+    // For "/" reveal
+    // width: 175%;
+    // height: 175%;
+    // left: -15%;
+    // top: -15%;
+    // transform: rotateZ(14.5deg);
+    
+    // For "\" reveal
+    width: 150%;
+    height: 150%;
+    left: -20%;
+    top: -20%;
+    transform: rotateZ(-8deg);
+
+    // opacity: .6;
+  }
 }
 
 // Nav common
 .navbar{
   padding: 50px 70px;
+  @include media('<=tab'){
+    padding: 25px 35px;
+  }
   font-weight: 500;
   font-family: $pop;
   letter-spacing: 2px;

@@ -41,188 +41,188 @@ window.addEventListener('mousemove', ev => mousePos = getmousePos(ev))
 
 // Work page effects
 class Slide {
-    constructor(el, title) {
-        this.DOM = {el: el};
-        this.DOM.title = title;
-        charming(this.DOM.title);
-        this.DOM.titleLetters = [...this.DOM.title.querySelectorAll('span')];
-        this.DOM.titleLetters.sort(() => Math.round(Math.random())-0.5);
-        this.DOM.number = this.DOM.el.querySelector('.number');
-        this.DOM.subtitle = this.DOM.el.querySelector('.caption');
-        this.DOM.imgWrap = this.DOM.el.querySelector('.img-wrap');
-        this.DOM.img = this.DOM.imgWrap.querySelector('.img');
-    }
-    move(direction, val) {
-        return new Promise((resolve, reject) => {
-            const tx = direction === 'left' ? '+=' + val*-1 : '+=' + val;
-            const duration = 1.2;
-            
-            new TimelineMax({onComplete: resolve})
-            .to(this.DOM.imgWrap, duration, {
-                x: tx,
-                ease: Quart.easeInOut
-            }, 0)
-            .to(this.DOM.imgWrap, duration*.5, {
-                scaleX: 1.3,
-                ease: Quart.easeIn
-            }, 0)
-            .to(this.DOM.imgWrap, duration*.5, {
-                scaleX: 1,
-                ease: Quart.easeOut
-            }, duration*.5) 
-            .to(this.DOM.number, duration*.95, {
-                x: tx,
-                ease: Quint.easeInOut
-            }, 0)
-            .to(this.DOM.subtitle, duration*1.1, {
-                x: tx,
-                ease: Quart.easeInOut
-            }, 0)
-            .to(this.DOM.title, duration*1.05, {
-                x: tx,
-                ease: Quart.easeInOut
-            }, 0);
-        });
-    }
-    setCenter() {
-        this.isCenter = true;
-        this.DOM.el.classList.add('grid__item--center');
-        this.DOM.title.classList.add('grid__item--center');
-        TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
-    }
-    setRight() {
-        this.isRight = this.isCenter = false;
-        this.isLeft = true;
-        this.DOM.el.classList.add('grid__item--right');
-        this.DOM.title.classList.add('grid__item--right');
-        TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
-    }
-    setLeft() {
-        this.isLeft = this.isCenter = false;
-        this.isRight = true;
-        this.DOM.el.classList.add('grid__item--left');
-        this.DOM.title.classList.add('grid__item--left');
-        TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
-    }
-    reset() {
-        TweenMax.set([this.DOM.el, this.DOM.imgWrap, this.DOM.number, this.DOM.subtitle, this.DOM.title], {transform: 'none'});
-        TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 0});
-        this.DOM.title.classList = 'grid__item grid__item--title';
-        this.DOM.el.classList = 'grid__item grid__item--slide';
-    }
-    animateElementsOut(contentItem) {
-        return new Promise((resolve, reject) => {
-            const time = MathUtils.randomNumber(0,100)/500;
-            this.elemsTimeline = new TimelineMax({onComplete: resolve})
-            .staggerTo(this.DOM.titleLetters, 1, {
-                y: MathUtils.randomNumber(300,600),
-                opacity: 0,
-                ease: Quart.easeInOut
-            }, 0.04, time)
-            .staggerTo(this.DOM.titleLetters, 0.5, {
-                scaleY: 2.2,
-                ease: Quart.easeIn
-            }, 0.04, time)
-            .staggerTo(this.DOM.titleLetters, 0.5, {
-                scaleY: 1,
-                ease: Quart.easeOut
-            }, 0.04, time + 0.5)
-            .to(this.DOM.number, 1, {
-                y: -500,
-                opacity: 0,
-                ease: Quart.easeInOut
-            }, time+0.3)
-            .to(this.DOM.imgWrap, 0.8, {
-                y: -500,
-                opacity: 0,
-                ease: Quart.easeInOut
-            }, time+0.4)
-            .to(this.DOM.imgWrap, .4, {
-                scaleX: 0.95,
-                scaleY: 1.4,
-                ease: Quart.easeIn
-            }, time+0.4)
-            .to(this.DOM.imgWrap, .4, {
-                scaleX: 1,
-                scaleY: 1,
-                ease: Quart.easeOut
-            }, time+0.4 + 0.4)
-            .to(this.DOM.subtitle, 1, {
-                y: -500,
-                opacity: 0,
-                ease: Quart.easeInOut
-            }, time+0.5);
+  constructor(el, title) {
+      this.DOM = {el: el};
+      this.DOM.title = title;
+      charming(this.DOM.title);
+      this.DOM.titleLetters = [...this.DOM.title.querySelectorAll('span')];
+      this.DOM.titleLetters.sort(() => Math.round(Math.random())-0.5);
+      this.DOM.number = this.DOM.el.querySelector('.number');
+      this.DOM.subtitle = this.DOM.el.querySelector('.caption');
+      this.DOM.imgWrap = this.DOM.el.querySelector('.img-wrap');
+      this.DOM.img = this.DOM.imgWrap.querySelector('.img');
+  }
+  move(direction, val) {
+      return new Promise((resolve, reject) => {
+          const tx = direction === 'left' ? '+=' + val*-1 : '+=' + val;
+          const duration = 1.2;
+          
+          new TimelineMax({onComplete: resolve})
+          .to(this.DOM.imgWrap, duration, {
+              x: tx,
+              ease: Quart.easeInOut
+          }, 0)
+          .to(this.DOM.imgWrap, duration*.5, {
+              scaleX: 1.3,
+              ease: Quart.easeIn
+          }, 0)
+          .to(this.DOM.imgWrap, duration*.5, {
+              scaleX: 1,
+              ease: Quart.easeOut
+          }, duration*.5) 
+          .to(this.DOM.number, duration*.95, {
+              x: tx,
+              ease: Quint.easeInOut
+          }, 0)
+          .to(this.DOM.subtitle, duration*1.1, {
+              x: tx,
+              ease: Quart.easeInOut
+          }, 0)
+          .to(this.DOM.title, duration*1.05, {
+              x: tx,
+              ease: Quart.easeInOut
+          }, 0);
+      });
+  }
+  setCenter() {
+      this.isCenter = true;
+      this.DOM.el.classList.add('grid__item--center');
+      this.DOM.title.classList.add('grid__item--center');
+      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+  }
+  setRight() {
+      this.isRight = this.isCenter = false;
+      this.isLeft = true;
+      this.DOM.el.classList.add('grid__item--right');
+      this.DOM.title.classList.add('grid__item--right');
+      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+  }
+  setLeft() {
+      this.isLeft = this.isCenter = false;
+      this.isRight = true;
+      this.DOM.el.classList.add('grid__item--left');
+      this.DOM.title.classList.add('grid__item--left');
+      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+  }
+  reset() {
+      TweenMax.set([this.DOM.el, this.DOM.imgWrap, this.DOM.number, this.DOM.subtitle, this.DOM.title], {transform: 'none'});
+      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 0});
+      this.DOM.title.classList = 'grid__item grid__item--title';
+      this.DOM.el.classList = 'grid__item grid__item--slide';
+  }
+  animateElementsOut(contentItem) {
+      return new Promise((resolve, reject) => {
+          const time = MathUtils.randomNumber(0,100)/500;
+          this.elemsTimeline = new TimelineMax({onComplete: resolve})
+          .staggerTo(this.DOM.titleLetters, 1, {
+              y: MathUtils.randomNumber(300,600),
+              opacity: 0,
+              ease: Quart.easeInOut
+          }, 0.04, time)
+          .staggerTo(this.DOM.titleLetters, 0.5, {
+              scaleY: 2.2,
+              ease: Quart.easeIn
+          }, 0.04, time)
+          .staggerTo(this.DOM.titleLetters, 0.5, {
+              scaleY: 1,
+              ease: Quart.easeOut
+          }, 0.04, time + 0.5)
+          .to(this.DOM.number, 1, {
+              y: -500,
+              opacity: 0,
+              ease: Quart.easeInOut
+          }, time+0.3)
+          .to(this.DOM.imgWrap, 0.8, {
+              y: -500,
+              opacity: 0,
+              ease: Quart.easeInOut
+          }, time+0.4)
+          .to(this.DOM.imgWrap, .4, {
+              scaleX: 0.95,
+              scaleY: 1.4,
+              ease: Quart.easeIn
+          }, time+0.4)
+          .to(this.DOM.imgWrap, .4, {
+              scaleX: 1,
+              scaleY: 1,
+              ease: Quart.easeOut
+          }, time+0.4 + 0.4)
+          .to(this.DOM.subtitle, 1, {
+              y: -500,
+              opacity: 0,
+              ease: Quart.easeInOut
+          }, time+0.5);
 
-            if ( this.isCenter ) {
-                const contentItemTitle = contentItem.querySelector('.content__item-header-title');
-                const contentItemImg = contentItem.querySelector('.img--content');
-                this.elemsTimeline.to(contentItemTitle, 0.8, {
-                    ease: Expo.easeOut,
-                    startAt: {y: '100%', opacity: 0, rotation: -16},
-                    y: '0%',
-                    rotation: 0,
-                    opacity: 1
-                }, time+1.3)
-                .set(contentItemImg, {scale: 1.2}, 0)
-                .to(contentItemImg, 0.8, {
-                    ease: Expo.easeOut,
-                    scale: 1
-                }, time+1.3)
-                .to(revealer.DOM.el, 1, {
-                    ease: Quint.easeOut,
-                    y: '-100%'
-                }, time+1.2);
-            }
-        });
-    }
-    animateElementsIn(contentItem) {
-        return new Promise((resolve, reject) => {
-            const time = MathUtils.randomNumber(0,50)/500;
-            this.elemsTimeline = new TimelineMax({onComplete: resolve});
-            
-            if ( this.isCenter ) {
-                const contentItemTitle = contentItem.querySelector('.content__item-header-title');
-                const contentItemImg = contentItem.querySelector('.img--content');
-                this.elemsTimeline.to(contentItemTitle, 1, {
-                    ease: Quint.easeOut,
-                    y: '50%',
-                    opacity: 0
-                }, 0)
-                .to(contentItemImg, 1, {
-                    ease: Quint.easeOut,
-                    scale: 1.2
-                }, 0)
-                .to(revealer.DOM.el, 1, {
-                    ease: Quint.easeOut,
-                    y: '0%'
-                }, 0);
-            }
-            this.elemsTimeline.to(this.DOM.subtitle, 0.8, {
-                y: 0,
-                opacity: 1,
-                ease: Quart.easeOut
-            }, time)
-            .to(this.DOM.imgWrap, 0.8, {
-                y: 0,
-                opacity: 1,
-                scaleX: 1,
-                scaleY: 1,
-                ease: Quart.easeOut
-            }, time+0.1)
-            .to(this.DOM.number, 0.8, {
-                y: 0,
-                opacity: 1,
-                ease: Quart.easeOut
-            }, time+0.2)
-            .staggerTo(this.DOM.titleLetters, 0.8, {
-                y: 0,
-                opacity: 1,
-                scaleX: 1,
-                scaleY: 1,
-                ease: Quart.easeOut
-            }, 0.03, time+0.1)
-        });
-    }
+          if ( this.isCenter ) {
+              const contentItemTitle = contentItem.querySelector('.content__item-header-title');
+              const contentItemImg = contentItem.querySelector('.img--content');
+              this.elemsTimeline.to(contentItemTitle, 0.8, {
+                  ease: Expo.easeOut,
+                  startAt: {y: '100%', opacity: 0, rotation: -16},
+                  y: '0%',
+                  rotation: 0,
+                  opacity: 1
+              }, time+1.3)
+              .set(contentItemImg, {scale: 1.2}, 0)
+              .to(contentItemImg, 0.8, {
+                  ease: Expo.easeOut,
+                  scale: 1
+              }, time+1.3)
+              .to(revealer.DOM.el, 1, {
+                  ease: Quint.easeOut,
+                  y: '-100%'
+              }, time+1.2);
+          }
+      });
+  }
+  animateElementsIn(contentItem) {
+      return new Promise((resolve, reject) => {
+          const time = MathUtils.randomNumber(0,50)/500;
+          this.elemsTimeline = new TimelineMax({onComplete: resolve});
+          
+          if ( this.isCenter ) {
+              const contentItemTitle = contentItem.querySelector('.content__item-header-title');
+              const contentItemImg = contentItem.querySelector('.img--content');
+              this.elemsTimeline.to(contentItemTitle, 1, {
+                  ease: Quint.easeOut,
+                  y: '50%',
+                  opacity: 0
+              }, 0)
+              .to(contentItemImg, 1, {
+                  ease: Quint.easeOut,
+                  scale: 1.2
+              }, 0)
+              .to(revealer.DOM.el, 1, {
+                  ease: Quint.easeOut,
+                  y: '0%'
+              }, 0);
+          }
+          this.elemsTimeline.to(this.DOM.subtitle, 0.8, {
+              y: 0,
+              opacity: 1,
+              ease: Quart.easeOut
+          }, time)
+          .to(this.DOM.imgWrap, 0.8, {
+              y: 0,
+              opacity: 1,
+              scaleX: 1,
+              scaleY: 1,
+              ease: Quart.easeOut
+          }, time+0.1)
+          .to(this.DOM.number, 0.8, {
+              y: 0,
+              opacity: 1,
+              ease: Quart.easeOut
+          }, time+0.2)
+          .staggerTo(this.DOM.titleLetters, 0.8, {
+              y: 0,
+              opacity: 1,
+              scaleX: 1,
+              scaleY: 1,
+              ease: Quart.easeOut
+          }, 0.03, time+0.1)
+      });
+  }
 }
 
 class Slideshow {
@@ -278,6 +278,11 @@ class Slideshow {
       this.centerSlide.setCenter();
       this.rightSlide.setRight();
       this.leftSlide.setLeft(); 
+      // l(this.centerSlide)
+
+      this.leftSlide.DOM.img.tagName === 'VIDEO' && this.leftSlide.DOM.img.pause()
+      this.centerSlide.DOM.img.tagName === 'VIDEO' && this.centerSlide.DOM.img.play()
+      this.rightSlide.DOM.img.tagName === 'VIDEO' && this.rightSlide.DOM.img.pause()
   }
   // Distance between 2 slides 
   // The amount to translate the elements that move when we navigate the slideshow
@@ -368,12 +373,11 @@ class Slideshow {
           this.isAnimating = false;
       });
   }
-  openSlide() {
-      this.toggleSlide('open');
+  openSlide() { 
+    this.centerSlide.DOM.img.tagName === 'VIDEO' && this.centerSlide.DOM.img.pause()
+    this.toggleSlide('open'); 
   }
-  closeSlide() {
-      this.toggleSlide('close');
-  }
+  closeSlide() { this.toggleSlide('close'); }
   toggleSlide(action) {
       // l(action, this)
       if ( this.isAnimating ) {
@@ -397,79 +401,83 @@ class Slideshow {
               contentItem.classList.remove('content__item--current');
           }
           this.isAnimating = false;
+          this.centerSlide.DOM.img.tagName === 'VIDEO' && this.centerSlide.DOM.img.play()
       });
   }
 }
 
 class Revealer {
-    constructor(el) {
-        this.DOM = {el: el};
-        this.DOM.el.style.width = `calc(100vw * ${Math.cos(8 * Math.PI/180)} + 100vh * ${Math.sin(8 * Math.PI/180)})`;
-        this.DOM.el.style.height = `calc(100vw * ${Math.sin(8 * Math.PI/180)} + 100vh * ${Math.cos(8 * Math.PI/180)})`;
-    }
+  constructor(el) {
+    this.DOM = {el: el};
+    this.DOM.el.style.width = `calc(100vw * ${Math.cos(8 * Math.PI/180)} + 100vh * ${Math.sin(8 * Math.PI/180)})`;
+    this.DOM.el.style.height = `calc(100vw * ${Math.sin(8 * Math.PI/180)} + 100vh * ${Math.cos(8 * Math.PI/180)})`;
+  }
 }
 
 // Contact page effects
 class GridItem {
-    constructor(el) {
-        this.DOM = {el: el};
-        this.DOM.inner = this.DOM.el.querySelector('.grid__item-img');
-        this.move();
+  constructor(el) {
+    this.DOM = {el: el};
+    this.DOM.inner = this.DOM.el.querySelector('.grid__item-img');
+    this.move();
+  }
+  move() {
+    this.invertMovement = !randomNumber(0,3);
+
+    let translationVals = {tx: 0, ty: 0};
+    const xstart = this.invertMovement ? randomNumber(20,70) : randomNumber(40,80);
+    const ystart = this.invertMovement? randomNumber(10,60) : randomNumber(40,80);
+
+    // also moving inner image (max 50px on each side - to change this limit change it also in the CSS)
+    let translationInnerVals = {tx: 0, ty: 0};
+    const xstartInner = this.invertMovement ? randomNumber(0,25) : randomNumber(0,50);
+    const ystartInner = this.invertMovement? randomNumber(0,25) : randomNumber(0,50);
+
+    const render = () => {
+      translationVals.tx = lerp(translationVals.tx, map(mousePos.x, 0, winsize.width, this.invertMovement ? xstart : -xstart, this.invertMovement ? -xstart: xstart), 0.07);
+      translationVals.ty = lerp(translationVals.ty, map(mousePos.y, 0, winsize.height, this.invertMovement ? ystart : -ystart, this.invertMovement ? -ystart: ystart), 0.07);            
+      gsap.set(this.DOM.el, {x: translationVals.tx, y: translationVals.ty});   
+      
+      translationInnerVals.tx = lerp(translationInnerVals.tx, map(mousePos.x, 0, winsize.width, this.invertMovement ? -xstartInner : xstartInner, this.invertMovement ? xstartInner: -xstartInner), 0.07);
+      translationInnerVals.ty = lerp(translationInnerVals.ty, map(mousePos.y, 0, winsize.height, this.invertMovement ? -ystartInner : ystartInner, this.invertMovement ? ystartInner: -ystartInner), 0.07);
+      gsap.set(this.DOM.inner, {x: translationInnerVals.tx, y: translationInnerVals.ty});   
+      
+      requestAnimationFrame(render);
     }
-    move() {
-        this.invertMovement = !randomNumber(0,3);
-
-        let translationVals = {tx: 0, ty: 0};
-        const xstart = this.invertMovement ? randomNumber(20,70) : randomNumber(40,80);
-        const ystart = this.invertMovement? randomNumber(10,60) : randomNumber(40,80);
-
-        // also moving inner image (max 50px on each side - to change this limit change it also in the CSS)
-        let translationInnerVals = {tx: 0, ty: 0};
-        const xstartInner = this.invertMovement ? randomNumber(0,25) : randomNumber(0,50);
-        const ystartInner = this.invertMovement? randomNumber(0,25) : randomNumber(0,50);
-
-        const render = () => {
-            translationVals.tx = lerp(translationVals.tx, map(mousePos.x, 0, winsize.width, this.invertMovement ? xstart : -xstart, this.invertMovement ? -xstart: xstart), 0.07);
-            translationVals.ty = lerp(translationVals.ty, map(mousePos.y, 0, winsize.height, this.invertMovement ? ystart : -ystart, this.invertMovement ? -ystart: ystart), 0.07);            
-            gsap.set(this.DOM.el, {x: translationVals.tx, y: translationVals.ty});   
-            
-            translationInnerVals.tx = lerp(translationInnerVals.tx, map(mousePos.x, 0, winsize.width, this.invertMovement ? -xstartInner : xstartInner, this.invertMovement ? xstartInner: -xstartInner), 0.07);
-            translationInnerVals.ty = lerp(translationInnerVals.ty, map(mousePos.y, 0, winsize.height, this.invertMovement ? -ystartInner : ystartInner, this.invertMovement ? ystartInner: -ystartInner), 0.07);
-            gsap.set(this.DOM.inner, {x: translationInnerVals.tx, y: translationInnerVals.ty});   
-            
-            requestAnimationFrame(render);
-        }
-        requestAnimationFrame(render);
-    }
+    requestAnimationFrame(render);
+  }
 }
 
 class Grid {
-    constructor(el) {
-        this.DOM = {el: el};
-        this.gridItems = [];
-        this.items = [...this.DOM.el.querySelectorAll('.grid__item')];
-        this.items.forEach(item => this.gridItems.push(new GridItem(item)));
+  constructor(el) {
+    this.DOM = {el: el};
+    this.gridItems = [];
+    this.items = [...this.DOM.el.querySelectorAll('.grid__item')];
+    this.items.forEach(item => this.gridItems.push(new GridItem(item)));
 
-        this.showItems();
-    }
-    // Initial animation to scale up and fade in the items
-    showItems() {
-        gsap
-        .timeline()
-        .set(this.items, {scale: pos => this.gridItems[pos].invertMovement ? 0.2 : 0.6, opacity: 0}, 0)
-        .to(this.items, {
-            duration: 2,
-            ease: 'Expo.easeOut',
-            scale: pos => this.gridItems[pos].invertMovement ? 0.5 : 1,
-            stagger: {amount: 0.6, grid: 'auto', from: 'center'}
-        }, 0)
-        .to(this.items, {
-            duration: 2,
-            ease: 'Power1.easeOut',
-            opacity: pos => this.gridItems[pos].invertMovement ? 0.3 : 0.9,
-            stagger: {amount: 0.6, grid: 'auto', from: 'center'}
-        }, 0);
-    }
+    this.showItems();
+  }
+  // Initial animation to scale up and fade in the items
+  showItems() {
+    gsap
+    .timeline()
+    // .set(this.items, {scale: pos => this.gridItems[pos].invertMovement ? 0.2 : 0.6, opacity: 0}, 0)
+    .set(this.items, {scale: 0.2, opacity: 0}, 0)
+    .to(this.items, {
+      duration: 2,
+      ease: 'Expo.easeOut',
+      // scale: pos => this.gridItems[pos].invertMovement ? 0.5 : 1,
+      scale: 1,
+      stagger: {amount: 0.6, grid: 'auto', from: 'center'}
+    }, 0)
+    .to(this.items, {
+      duration: 2,
+      ease: 'Power1.easeOut',
+      // opacity: pos => this.gridItems[pos].invertMovement ? 0.3 : 0.9,
+      opacity: 0.9,
+      stagger: {amount: 0.6, grid: 'auto', from: 'center'}
+    }, 0);
+  }
 }
 
 // Home page effects
@@ -486,12 +494,12 @@ class Home{
   }
   init(){
 
-    // Create and play ticker
     const time = 50, { tickerWrapper, list, clonedList, infinite, el } = this
     
     // Play home video
     el.querySelector('video').play()
 
+    // Create and play ticker
     let listWidth = 10
     list.find("li").each(function (i) { listWidth += $(this, i).outerWidth(true) })
 

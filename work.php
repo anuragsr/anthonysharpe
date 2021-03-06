@@ -18,7 +18,7 @@
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">New York City, March 24</span>
-              <h2 class="content__item-header-title">Kanzu</h2>
+              <h2 class="content__item-header-title">Nissan</h2>
             </header>
             <div class="content__item-copy">
               <p class="content__item-copy-text">
@@ -37,7 +37,7 @@
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Acapulco, March 25</span>
-              <h2 class="content__item-header-title">Juked</h2>
+              <h2 class="content__item-header-title">Infiniti</h2>
             </header>
             <div class="content__item-copy">
               <p class="content__item-copy-text">
@@ -57,7 +57,7 @@
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Brisbane, March 26</span>
-              <h2 class="content__item-header-title">Colza</h2>
+              <h2 class="content__item-header-title">Blablacar</h2>
             </header>
             <div class="content__item-copy">
               <p class="content__item-copy-text">
@@ -76,7 +76,45 @@
             </div>
             <header class="content__item-header">
               <span class="content__item-header-meta">Berlin, March 27</span>
-              <h2 class="content__item-header-title">Voxey</h2>
+              <h2 class="content__item-header-title">Beaubleu</h2>
+            </header>
+            <div class="content__item-copy">
+              <p class="content__item-copy-text">
+              And putting on his stiff collar and rebellious tie he spoke to them,
+              chiding them, and to his dangling watchchain. His hands plunged and
+              rummaged in his trunk while he called for a clean handkerchief. God,
+              we’ll simply have to dress the character. I want puce gloves and green
+              boots. Contradiction.
+              </p>
+              <a href="#" class="content__item-copy-more">more +</a>
+            </div>
+          </article>
+          <article class="content__item">
+            <div class="img-wrap img-wrap--content">
+              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
+            </div>
+            <header class="content__item-header">
+              <span class="content__item-header-meta">Berlin, March 27</span>
+              <h2 class="content__item-header-title">Ornikar</h2>
+            </header>
+            <div class="content__item-copy">
+              <p class="content__item-copy-text">
+              And putting on his stiff collar and rebellious tie he spoke to them,
+              chiding them, and to his dangling watchchain. His hands plunged and
+              rummaged in his trunk while he called for a clean handkerchief. God,
+              we’ll simply have to dress the character. I want puce gloves and green
+              boots. Contradiction.
+              </p>
+              <a href="#" class="content__item-copy-more">more +</a>
+            </div>
+          </article>
+          <article class="content__item">
+            <div class="img-wrap img-wrap--content">
+              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
+            </div>
+            <header class="content__item-header">
+              <span class="content__item-header-meta">Berlin, March 27</span>
+              <h2 class="content__item-header-title">Ironman</h2>
             </header>
             <div class="content__item-copy">
               <p class="content__item-copy-text">
@@ -97,37 +135,71 @@
           <figure class="grid__item grid__item--slide">
             <span class="number">01</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/work/1.gif);"></div>
+              <!-- <div class="img" style="background-image: url(img/work/1.gif);"></div> -->
+              <video class="img"  loop="true"  muted>
+                <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+              </video>
             </div>
             <figcaption class="caption">New York City, March 24</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">02</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/work/2.gif);"></div>
+              <!-- <div class="img" style="background-image: url(img/work/2.gif);"></div> -->
+              <video class="img"  loop="true"  muted>
+                <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+              </video>
             </div>
             <figcaption class="caption">Acapulco, March 25</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">03</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/work/3.gif);"></div>
+              <div class="img" style="background-image: url(img/work/1.gif);"></div>
+              <!-- <video class="img"  loop="true"  muted>
+                <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+              </video> -->
             </div>
             <figcaption class="caption">Brisbane, March 26</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">04</span>
             <div class="img-wrap">
-              <div class="img" style="background-image: url(img/work/4.gif);"></div>
+              <!-- <div class="img" style="background-image: url(img/work/4.gif);"></div> -->
+              <video class="img"  loop="true"  muted>
+                <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <figcaption class="caption">Berlin, March 27</figcaption>
+          </figure>
+          <figure class="grid__item grid__item--slide">
+            <span class="number">05</span>
+            <div class="img-wrap">
+              <!-- <div class="img" style="background-image: url(img/work/4.gif);"></div> -->
+              <video class="img"  loop="true"  muted>
+                <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <figcaption class="caption">Berlin, March 27</figcaption>
+          </figure>
+          <figure class="grid__item grid__item--slide">
+            <span class="number">06</span>
+            <div class="img-wrap">
+              <!-- <div class="img" style="background-image: url(img/work/4.gif);"></div> -->
+              <video class="img"  loop="true"  muted>
+                <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+              </video>
             </div>
             <figcaption class="caption">Berlin, March 27</figcaption>
           </figure>
           <div class="titles-wrap">
             <div class="grid grid--titles">
-              <h3 class="grid__item grid__item--title">Kanzu</h3>
-              <h3 class="grid__item grid__item--title">Juked</h3>
-              <h3 class="grid__item grid__item--title">Colza</h3>
-              <h3 class="grid__item grid__item--title">Voxey</h3>
+              <h3 class="grid__item grid__item--title">Nissan</h3>
+              <h3 class="grid__item grid__item--title">Infiniti</h3>
+              <h3 class="grid__item grid__item--title">Blablacar</h3>
+              <h3 class="grid__item grid__item--title">Beaubleu</h3>
+              <h3 class="grid__item grid__item--title">Ornikar</h3>
+              <h3 class="grid__item grid__item--title">Ironman</h3>
             </div>
           </div>
           <div class="grid grid--interaction">

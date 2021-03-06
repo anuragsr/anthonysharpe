@@ -74,7 +74,7 @@
   pointer-events: none;
 }
 .ctn-work .grid--slideshow {
-  top: 17rem;
+  top: 22vh;
   transform: rotate(-8deg);
 }
 .ctn-work .grid--titles {
@@ -103,9 +103,9 @@
   width: 100%;
 }
 .ctn-work .grid__item--title {
-  font-size: 13vw;
+  font-size: 7vw;
   margin: 0;
-  font-family: ivymode, sans-serif;
+  font-family: "Poppins";
   font-weight: 600;
   color: var(--color-title);
 }
@@ -160,8 +160,13 @@
   top: 0;
   background-size: cover;
   background-position: 50% 50%;
+  top: 0;
   position: absolute;
   pointer-events: none;
+}
+.ctn-work video.img {
+  width: auto;
+  left: -50%;
 }
 .ctn-work .img--content {
   background-position: 50% 38%;
@@ -225,6 +230,11 @@
   opacity: 1;
   pointer-events: auto;
   top: 16rem;
+}
+@media (max-width: 550px) {
+  .js .ctn-work .content__item--current {
+    top: 15vh;
+  }
 }
 
 @media screen and (min-width: 53em) {
