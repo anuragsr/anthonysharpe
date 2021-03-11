@@ -21,7 +21,7 @@
             <div>PWL AGENCY</div>
             <div class="info mt-4">
               contact@pwlagency.com<br/>
-              Tel 09 09 10 19 22
+              +33 1 79 56 20 92
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
-@import url("./common.css");
-@import url("./header.css");
-@import url("./home.css");
-@import url("./work.css");
-@import url("./contact.css");
-@import url("./footer.css");
+@import url("./common.css?v=1");
+@import url("./header.css?v=1");
+@import url("./home.css?v=1");
+@import url("./work.css?v=1");
+@import url("./contact.css?v=1");
+@import url("./footer.css?v=1");

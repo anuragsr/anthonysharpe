@@ -1,12 +1,6 @@
 @import './vars';
 @import './include-media';
 .ctn-home{
-  .vid-ol{
-    @include pa(0, 0);
-    @extend %fhw;
-    z-index: 2;
-    background-color: rgba($b, .4);
-  }
   video{
     @extend %fhw;
     position: relative;

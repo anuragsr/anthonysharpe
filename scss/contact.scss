@@ -55,7 +55,7 @@
     will-change: transform;
   }
 
-  /* Shorthand grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+  // Shorthand grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
   .pos-1 { grid-area: 16/10/26/18; }
   .pos-2 { grid-area: 7/26/17/34; }
   .pos-3 { grid-area: 30/36/46/42; }
@@ -63,13 +63,17 @@
   .content__title {
     font-family: $lato;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 44px;
     line-height: 1;
-    position: relative;
     color: $w;
+    position: relative;
+    left: -6vw;
+    top: -2vh;
     .info{
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 34px;
+      line-height: 46px;
+      font-weight: 200;
+      margin-top: 20px;
     }
   }
 }

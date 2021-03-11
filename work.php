@@ -14,10 +14,16 @@
         <div class="content">
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">New York City, March 24</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Nissan</h2>
             </header>
             <div class="content__item-copy">
@@ -33,10 +39,16 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/2.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">Acapulco, March 25</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Infiniti</h2>
             </header>
             <div class="content__item-copy">
@@ -53,10 +65,16 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/3.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">Brisbane, March 26</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Blablacar</h2>
             </header>
             <div class="content__item-copy">
@@ -72,10 +90,16 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">Berlin, March 27</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Beaubleu</h2>
             </header>
             <div class="content__item-copy">
@@ -91,10 +115,16 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">Berlin, March 27</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Ornikar</h2>
             </header>
             <div class="content__item-copy">
@@ -110,10 +140,16 @@
           </article>
           <article class="content__item">
             <div class="img-wrap img-wrap--content">
-              <div class="img img--content" style="background-image: url(img/work/4.jpg);"></div>
+              <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
+              <div class="img img--content">
+                <div class="vid-ol"></div>
+                <video loop="true" muted>
+                  <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <header class="content__item-header">
-              <span class="content__item-header-meta">Berlin, March 27</span>
+              <span class="content__item-header-meta">WEB COMMERCIAL</span>
               <h2 class="content__item-header-title">Ironman</h2>
             </header>
             <div class="content__item-copy">
@@ -140,7 +176,7 @@
                 <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
               </video>
             </div>
-            <figcaption class="caption">New York City, March 24</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">02</span>
@@ -150,7 +186,7 @@
                 <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
               </video>
             </div>
-            <figcaption class="caption">Acapulco, March 25</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">03</span>
@@ -160,7 +196,7 @@
                 <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
               </video> -->
             </div>
-            <figcaption class="caption">Brisbane, March 26</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">04</span>
@@ -170,7 +206,7 @@
                 <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
               </video>
             </div>
-            <figcaption class="caption">Berlin, March 27</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">05</span>
@@ -180,7 +216,7 @@
                 <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
               </video>
             </div>
-            <figcaption class="caption">Berlin, March 27</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <figure class="grid__item grid__item--slide">
             <span class="number">06</span>
@@ -190,7 +226,7 @@
                 <source src="video/Pexels Videos 2825517.mp4" type="video/mp4" />
               </video>
             </div>
-            <figcaption class="caption">Berlin, March 27</figcaption>
+            <figcaption class="caption">WEB COMMERCIAL</figcaption>
           </figure>
           <div class="titles-wrap">
             <div class="grid grid--titles">

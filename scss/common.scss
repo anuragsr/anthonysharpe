@@ -12,7 +12,7 @@ body {
   
   --color-text: #5d5d5d;
 	// --color-bg: #e6e6ea;
-	--color-bg: #111;
+	--color-bg: #222;
 	--color-link: #838288;
 	--color-link-hover: #000;
 	// --color-number: #000;
@@ -43,7 +43,8 @@ input:focus{ outline: none; }
   pointer-events: none;
   .loading-screen {
     position: relative;
-    background-color: #701515;
+    background-color: $bg-cr;
+
     // For "/" reveal
     // width: 175%;
     // height: 175%;
@@ -77,10 +78,21 @@ input:focus{ outline: none; }
       .nav-link{ color: $w; }
     }
   }
+  &.navbar-secondary{
+    display: none;
+  }
 }
 
 // Styles while curtain is on
 .loading {
   .loading-container{ pointer-events: auto; }
   .ctn-contact .grid{ opacity: 0; }
+}
+
+// Video overlay
+.vid-ol{
+  @include pa(0, 0);
+  @extend %fhw;
+  z-index: 2;
+  background-color: rgba($b, .4);
 }

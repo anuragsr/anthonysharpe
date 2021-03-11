@@ -50,7 +50,6 @@ const l = console.log.bind(window.console)
       new Home(container)
     break;
   }
-
 }
 
 $(() => {
@@ -80,7 +79,7 @@ $(() => {
         // l("once", current, next)
         l("once", next.namespace)
         WebFont.load({
-          google: { families: ['Lato:300,400,500,600', 'Poppins:100,300,400,500,600,700'] } // Add more here
+          google: { families: ['Lato:200,300,400,500,600', 'Poppins:100,300,400,500,600,700'] } // Add more here
           , active: function () {
             l("Webfonts loaded")
             pageTransitionOut(next)

@@ -1,4 +1,4 @@
-.ctn-home .ctn-content, .ctn-home video, .ctn-home .vid-ol {
+.ctn-home .ctn-content, .ctn-home video {
   height: 100%;
   width: 100%;
 }
@@ -9,13 +9,6 @@
   align-items: center;
 }
 
-.ctn-home .vid-ol {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 .ctn-home video {
   position: relative;
   z-index: 1;

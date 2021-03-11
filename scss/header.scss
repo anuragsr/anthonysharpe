@@ -4,6 +4,9 @@ nav{
   a.navbar-brand{
     img{ height: 50px; }
   }
+  img.slide-close{
+    cursor: pointer;
+  }
   // font-family: $lato;
   // font-weight: 500;
   // &.navbar-dark{

@@ -227,49 +227,51 @@ class Slide {
 
 class Slideshow {
   constructor(el) {
-      this.DOM = {el: el};
-      // The titles
-      this.DOM.titlesWrap = this.DOM.el.querySelector('.titles-wrap');
-      this.DOM.titlesInner = this.DOM.titlesWrap.querySelector('.grid--titles');
-      this.DOM.titles = [...this.DOM.titlesInner.querySelectorAll('.grid__item--title')];
-      // The slides instances
-      this.slides = [];
-      [...this.DOM.el.querySelectorAll('.grid__item--slide')].forEach((slide, pos) => this.slides.push(new Slide(slide, this.DOM.titles[pos])));
-      // Total number of slides
-      this.slidesTotal = this.slides.length;
-      if ( this.slidesTotal < 4 ) return;
-      // Center slide's position
-      this.center = 0;
+    this.DOM = {el: el};
+    // The titles
+    this.DOM.titlesWrap = this.DOM.el.querySelector('.titles-wrap');
+    this.DOM.titlesInner = this.DOM.titlesWrap.querySelector('.grid--titles');
+    this.DOM.titles = [...this.DOM.titlesInner.querySelectorAll('.grid__item--title')];
+    // The slides instances
+    this.slides = [];
+    [...this.DOM.el.querySelectorAll('.grid__item--slide')].forEach((slide, pos) => this.slides.push(new Slide(slide, this.DOM.titles[pos])));
+    // Total number of slides
+    this.slidesTotal = this.slides.length;
+    if ( this.slidesTotal < 4 ) return;
+    // Center slide's position
+    this.center = 0;
 
-      // Content Items
-      this.DOM.contentItems = [...document.querySelectorAll('.content__item')];
+    // Content Items
+    this.DOM.contentItems = [...document.querySelectorAll('.content__item')];
 
-      // Areas (left, center, right) where to attach the navigation events.
-      this.DOM.interaction = {
-          left: document.querySelector('.grid__item--left'),
-          center: document.querySelector('.grid__item--center'),
-          right: document.querySelector('.grid__item--right')
-      };
-      
-      this.setVisibleSlides();
-      this.calculateGap();
-      this.initEvents();
+    // Areas (left, center, right) where to attach the navigation events.
+    this.DOM.interaction = {
+        left: document.querySelector('.grid__item--left'),
+        center: document.querySelector('.grid__item--center'),
+        right: document.querySelector('.grid__item--right')
+    };
+    
+    this.videoPlaying = false
 
-      let mouseMoveVals = {translation: 0, rotation: -8};
-      const render = () => {
-          //if ( !this.isAnimating ) {
-              mouseMoveVals.translation = MathUtils.lerp(mouseMoveVals.translation, MathUtils.lineEq(-15, 15, winsize.width, 0, mousePos.x), 0.03);
-              //mouseMoveVals.rotation = MathUtils.lerp(mouseMoveVals.rotation, MathUtils.lineEq(-8.5, -7.5, winsize.width, 0, mousePos.x), 0.03);
-              for (let i = 0; i <= this.slidesTotal - 1; ++i) {
-                  TweenMax.set(this.slides[i].DOM.img, {x: mouseMoveVals.translation});
-                  TweenMax.set(this.DOM.titlesInner, {x: -4*mouseMoveVals.translation});
-                  //TweenMax.set(this.DOM.el, {rotation: mouseMoveVals.rotation});
-                  //TweenMax.set(this.DOM.titlesWrap, {rotation: -2*mouseMoveVals.rotation});
-              }
-          //}
-          requestAnimationFrame(render);
-      }
-      requestAnimationFrame(render);
+    this.setVisibleSlides();
+    this.calculateGap();
+    this.initEvents();
+
+    let mouseMoveVals = {translation: 0, rotation: -8};
+    const render = () => {
+        //if ( !this.isAnimating ) {
+            mouseMoveVals.translation = MathUtils.lerp(mouseMoveVals.translation, MathUtils.lineEq(-15, 15, winsize.width, 0, mousePos.x), 0.03);
+            //mouseMoveVals.rotation = MathUtils.lerp(mouseMoveVals.rotation, MathUtils.lineEq(-8.5, -7.5, winsize.width, 0, mousePos.x), 0.03);
+            for (let i = 0; i <= this.slidesTotal - 1; ++i) {
+                TweenMax.set(this.slides[i].DOM.img, {x: mouseMoveVals.translation});
+                TweenMax.set(this.DOM.titlesInner, {x: -4*mouseMoveVals.translation});
+                //TweenMax.set(this.DOM.el, {rotation: mouseMoveVals.rotation});
+                //TweenMax.set(this.DOM.titlesWrap, {rotation: -2*mouseMoveVals.rotation});
+            }
+        //}
+        requestAnimationFrame(render);
+    }
+    requestAnimationFrame(render);
   }
   setVisibleSlides() {
       this.centerSlide = this.slides[this.center];
@@ -294,52 +296,61 @@ class Slideshow {
   }
   // Initialize events
   initEvents() {
-      this.clickRightFn = () => this.navigate('right');
-      this.DOM.interaction.right.addEventListener('click', this.clickRightFn);
-      
-      this.clickLeftFn = () => this.navigate('left');
-      this.DOM.interaction.left.addEventListener('click', this.clickLeftFn);
-      
-      this.clickCenterFn = () => this.openSlide();
-      this.DOM.interaction.center.addEventListener('click', this.clickCenterFn);
+    this.clickRightFn = () => this.navigate('right');
+    this.DOM.interaction.right.addEventListener('click', this.clickRightFn);
+    
+    this.clickLeftFn = () => this.navigate('left');
+    this.DOM.interaction.left.addEventListener('click', this.clickLeftFn);
+    
+    this.clickCenterFn = () => this.openSlide();
+    this.DOM.interaction.center.addEventListener('click', this.clickCenterFn);
 
-      this.mouseenterCenterFn = () => {
-          if ( this.isAnimating ) {
-              return;
-          }
-          new TimelineMax()
-          .to(this.centerSlide.DOM.imgWrap, 0.7, {
-              ease: Expo.easeOut,
-              scale: 1.02
-          })
-          .to(this.centerSlide.DOM.img, 1.7, {
-              ease: Expo.easeOut,
-              scale: 1.05
-          }, 0);
-      };
-      this.DOM.interaction.center.addEventListener('mouseenter', this.mouseenterCenterFn);
+    this.mouseenterCenterFn = () => {
+      if ( this.isAnimating ) {
+          return;
+      }
+      new TimelineMax()
+      .to(this.centerSlide.DOM.imgWrap, 0.7, {
+          ease: Expo.easeOut,
+          scale: 1.02
+      })
+      .to(this.centerSlide.DOM.img, 1.7, {
+          ease: Expo.easeOut,
+          scale: 1.05
+      }, 0);
+    };
+    this.DOM.interaction.center.addEventListener('mouseenter', this.mouseenterCenterFn);
 
-      this.mouseleaveCenterFn = () => {
-          if ( this.isAnimating ) {
-              return;
-          }
-          new TimelineMax().to(this.centerSlide.DOM.imgWrap, 0.7, {
-              ease: Expo.easeOut,
-              scale: 1
-          })
-          .to(this.centerSlide.DOM.img, 0.7, {
-              ease: Expo.easeOut,
-              scale: 1
-          }, 0);
-      };
-      this.DOM.interaction.center.addEventListener('mouseleave', this.mouseleaveCenterFn);
+    this.mouseleaveCenterFn = () => {
+      if ( this.isAnimating ) {
+          return;
+      }
+      new TimelineMax().to(this.centerSlide.DOM.imgWrap, 0.7, {
+          ease: Expo.easeOut,
+          scale: 1
+      })
+      .to(this.centerSlide.DOM.img, 0.7, {
+          ease: Expo.easeOut,
+          scale: 1
+      }, 0);
+    };
+    this.DOM.interaction.center.addEventListener('mouseleave', this.mouseleaveCenterFn);
 
-      this.resizeFn = () => this.calculateGap();
-      window.addEventListener('resize', this.resizeFn);
+    this.resizeFn = () => this.calculateGap();
+    window.addEventListener('resize', this.resizeFn);
 
-      this.DOM.contentItems.forEach(item => {
-          item.querySelector('.img-wrap--content').addEventListener('click', () => this.closeSlide());
-      });
+    // this.DOM.contentItems.forEach(item => {
+    //   item.querySelector('.img-wrap--content').addEventListener('click', () => this.closeSlide())
+    // })
+
+    document.querySelector('.slide-close').addEventListener('click', () => this.closeSlide())
+
+    // Play video on click of content
+    this.DOM.contentItems.forEach(item => {
+      item.querySelector('.img-wrap--content').addEventListener('click', evt => {
+        this.toggleVideo(evt.currentTarget)
+      })
+    })
   }
   navigate(direction) {
       if ( this.isAnimating ) {
@@ -375,9 +386,20 @@ class Slideshow {
   }
   openSlide() { 
     this.centerSlide.DOM.img.tagName === 'VIDEO' && this.centerSlide.DOM.img.pause()
-    this.toggleSlide('open'); 
+    this.toggleSlide('open')
+    $("nav.navbar-primary, footer").fadeOut(500)
+    $("nav.navbar-secondary").fadeIn(500)
   }
-  closeSlide() { this.toggleSlide('close'); }
+  closeSlide() { 
+    this.toggleSlide('close')
+    $(".playing").removeClass('playing')
+    
+    this.video && this.video.pause()
+    this.otherEls && this.otherEls.show()
+
+    $("nav.navbar-secondary").fadeOut(500)
+    $("nav.navbar-primary, footer").fadeIn(500)
+  }
   toggleSlide(action) {
       // l(action, this)
       if ( this.isAnimating ) {
@@ -403,6 +425,31 @@ class Slideshow {
           this.isAnimating = false;
           this.centerSlide.DOM.img.tagName === 'VIDEO' && this.centerSlide.DOM.img.play()
       });
+  }
+  toggleVideo(el){
+    if(this.isAnimating) return
+
+    $(el).toggleClass('playing')
+    l("Video playing:", this.videoPlaying)
+    
+    const video = el.querySelector('video')
+    , vidOl = el.querySelector('.vid-ol')
+    , otherEls = 
+      $(el).siblings('.content__item-header, .content__item-copy')
+      .add(vidOl)
+      .add($(".navbar-secondary"))
+
+    if(this.videoPlaying){
+      video.pause()
+      otherEls.fadeIn()
+    } else {
+      video.play()
+      otherEls.fadeOut()
+    }
+    
+    this.videoPlaying = !this.videoPlaying
+    this.video = video
+    this.otherEls = otherEls
   }
 }
 

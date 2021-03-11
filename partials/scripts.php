@@ -4,6 +4,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/charming.min.js"></script>
-<script src="js/effects.js"></script>
-<script src="js/main.js"></script>
+<script src="js/effects.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
 <script src="http://localhost:35729/livereload.js?snipver=1"></script>
