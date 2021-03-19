@@ -315,7 +315,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: url("../img/play.png") 21 21, pointer;
+    cursor: url("../img/play.svg") 50 50, pointer;
   }
   .ctn-work .img-wrap--content .img--content video {
     position: relative;
@@ -325,7 +325,7 @@
   }
   .ctn-work .img-wrap--content.playing .img--content {
     width: 100%;
-    cursor: url("../img/pause.png") 21 21, pointer;
+    cursor: url("../img/pause.svg") 65 45, pointer;
   }
 
   .js .ctn-work .content__item {

@@ -7,12 +7,13 @@ html, body, .ctn-outer, .ctn-outer main {
 }
 body { 
   font-family: $pop;
-  background: $bg;
+  background: $bg-cr;
   @extend %ns;
   
   --color-text: #5d5d5d;
 	// --color-bg: #e6e6ea;
-	--color-bg: #222;
+	--color-bg: #111;
+	// --color-bg: #222;
 	--color-link: #838288;
 	--color-link-hover: #000;
 	// --color-number: #000;
@@ -43,7 +44,7 @@ input:focus{ outline: none; }
   pointer-events: none;
   .loading-screen {
     position: relative;
-    background-color: $bg-cr;
+    background-color: $bg;
 
     // For "/" reveal
     // width: 175%;
@@ -75,7 +76,33 @@ input:focus{ outline: none; }
   &.navbar-dark{
     .navbar-nav{
       .nav-item,
-      .nav-link{ color: $w; }
+      .nav-link{ 
+        color: $w;         
+      }
+      .nav-item.dot{ pointer-events: none; }
+      .nav-item:not(.dot){ 
+        position: relative; 
+        &:after{ 
+          @include pa ("", 0, 5, "");
+          content: "";
+          height: 2px;
+          width: 100%;
+          background-color: $w;
+          transform: scaleX(0);
+          transform-origin: right center;
+          transition: transform .3s;
+        }
+        &:hover{
+          &:after{ 
+            transform-origin: left center;
+            transform: scaleX(1); 
+          }
+        }
+        .nav-link{
+          padding-right: .25rem;
+          padding-left: .25rem;
+        }
+      }
     }
   }
   &.navbar-secondary{

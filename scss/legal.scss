@@ -1,0 +1,28 @@
+@import './vars';
+@import './include-media';
+.ctn-legal{
+  @extend %j-f-s;
+  flex-direction: column;
+  h1.title{ 
+    color: $w;
+    font-size: 2.5vw;
+    @include media('<tab'){
+      font-size: 10vw;
+    }
+  }
+  .ctn-content{
+    color: $w;
+    height: 65%;
+    width: 70%;
+    margin: 0 auto;
+    @include media('<tab'){
+      width: 100%;
+      padding: 0 35px;
+    }
+    .content{
+      height: 80%;
+      margin-top: 5vh;
+      overflow-y: scroll;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+nav a.navbar-brand {
+  font-size: 50px;
+}
 nav a.navbar-brand img {
   height: 50px;
 }

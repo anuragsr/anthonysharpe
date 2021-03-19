@@ -43,6 +43,9 @@ const l = console.log.bind(window.console)
       // Initialize grid
       grid = new Grid(container.querySelector('.grid'))
     break;
+
+    case 'legal':
+    break;
     
     default: // home
 

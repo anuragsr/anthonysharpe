@@ -13,26 +13,27 @@
       <main class="ctn-home" data-barba="container" data-barba-namespace="home">
         <div class="vid-ol"></div>
         <video loop="true" autoplay="autoplay" muted>
-          <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" />
+          <!-- <source src="video/Pouring French Press Coffee.mp4" type="video/mp4" /> -->
+          <source src="https://player.vimeo.com/external/314041399.hd.mp4?s=54635e7123aa51c55982f1936e2a5ef50b31d37d&profile_id=175" type="video/mp4" />
         </video>
         <div class="ctn-content">
           <div class="tickerwrapper">
             <ul class="list">
               <li class="listitem">
-                <span>PWL <span class="stroke">/</span> </span>
+                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
               </li>
               <li class="listitem">
-                <span>PWL <span class="stroke">/</span> </span>
+                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
               </li>
               <li class="listitem">
-                <span>PWL <span class="stroke">/</span> </span>
+                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
               </li>
               <li class="listitem">
-                <span>PWL <span class="stroke">/</span> </span>
+                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
               </li>
             </ul>
           </div>
-          <h2>VIDEOS FOR BRANDS</h2>
+          <h2>Director / Producer</h2>
         </div>
       </main>
     </div>

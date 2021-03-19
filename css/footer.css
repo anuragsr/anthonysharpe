@@ -2,20 +2,7 @@ footer .navbar-nav {
   font-family: "Lato";
   letter-spacing: normal;
   font-weight: 400;
-}
-footer .navbar-nav .outer-link {
-  display: inline-block;
-  position: relative;
-  padding: 0 !important;
-}
-footer .navbar-nav .outer-link:after {
-  content: " ";
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #fff;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=footer.css.map */

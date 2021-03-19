@@ -31,7 +31,7 @@
 .ctn-home .ctn-content .tickerwrapper {
   /* the outer div */
   position: relative;
-  height: 240px;
+  height: 260px;
   font-family: "Poppins";
   font-weight: 700;
   font-size: 180px;
@@ -56,16 +56,9 @@
   float: left;
   padding-left: 20px;
 }
-.ctn-home .ctn-content .tickerwrapper ul.list li .stroke {
-  font-weight: 100;
-  font-size: 120px;
-  -webkit-text-stroke: 0;
-  color: #fff;
-  position: relative;
-  top: -15px;
-}
 .ctn-home .ctn-content h2 {
   color: #fff;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 2px;
 }

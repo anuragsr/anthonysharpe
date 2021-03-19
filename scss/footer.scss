@@ -5,19 +5,20 @@ footer {
     font-family: $lato;
     letter-spacing: normal;
     font-weight: 400;
-    .outer-link{
-      display: inline-block;
-      position: relative;
-      padding: 0!important;
-      &:after{
-        content: " ";
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        bottom: 0; left: 0;
-        background: $w;
-      }
-    }
+    font-size: 14px;
+    // .outer-link{
+    //   display: inline-block;
+    //   position: relative;
+    //   padding: 0!important;
+    //   &:after{
+    //     content: " ";
+    //     height: 1px;
+    //     width: 100%;
+    //     position: absolute;
+    //     bottom: 0; left: 0;
+    //     background: $w;
+    //   }
+    // }
   }
   // font-family: $lato;
   // font-weight: 500;

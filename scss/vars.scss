@@ -60,6 +60,13 @@ $breakpoints: (
   align-items: flex-end;
 }
 
+// Justify content: flex end
+%j-f-s {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 // No Select
 %ns{
   -webkit-touch-callout: none; /* iOS Safari */
