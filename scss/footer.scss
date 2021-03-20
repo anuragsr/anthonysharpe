@@ -6,26 +6,11 @@ footer {
     letter-spacing: normal;
     font-weight: 400;
     font-size: 14px;
-    // .outer-link{
-    //   display: inline-block;
-    //   position: relative;
-    //   padding: 0!important;
-    //   &:after{
-    //     content: " ";
-    //     height: 1px;
-    //     width: 100%;
-    //     position: absolute;
-    //     bottom: 0; left: 0;
-    //     background: $w;
-    //   }
-    // }
+    .nav-cust a{
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: $pop;
+      letter-spacing: 2px;
+    }
   }
-  // font-family: $lato;
-  // font-weight: 500;
-  // &.navbar-dark{
-  //   .navbar-nav{
-  //     .nav-item,
-  //     .nav-link{ color: $w; }
-  //   }
-  // }
 }

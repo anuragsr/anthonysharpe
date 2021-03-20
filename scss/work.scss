@@ -1,6 +1,8 @@
 @import './vars';
 @import './include-media';
 
+body.work .hide-work{ display: none; }
+
 .ctn-work{
   .content {
     position: relative;
@@ -107,7 +109,8 @@
     height: 100%;
     z-index: 1000;
     pointer-events: none;
-    transform: rotate(16deg);
+    // transform: rotate(16deg);
+    transform: rotate(8deg);
   }
   
   .grid__item {

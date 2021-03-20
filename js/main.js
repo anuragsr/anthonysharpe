@@ -27,6 +27,9 @@ const l = console.log.bind(window.console)
 // Function to animate the content of each page
 , contentAnimation = next => {
   const { container, namespace } = next
+  
+  $('body').removeClass('work contact legal home')
+  $('body').addClass(namespace)
 
   switch(namespace){
     case 'work': 

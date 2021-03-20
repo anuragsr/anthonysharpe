@@ -1,3 +1,7 @@
+body.work .hide-work {
+  display: none;
+}
+
 .ctn-work .content {
   position: relative;
 }
@@ -88,7 +92,7 @@
   height: 100%;
   z-index: 1000;
   pointer-events: none;
-  transform: rotate(16deg);
+  transform: rotate(8deg);
 }
 .ctn-work .grid__item {
   display: flex;

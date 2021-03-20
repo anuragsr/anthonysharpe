@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+body.home .hide-home {
+  display: none;
+}
+
 .ctn-home video {
   position: relative;
   z-index: 1;

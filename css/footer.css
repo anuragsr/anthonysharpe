@@ -4,5 +4,11 @@ footer .navbar-nav {
   font-weight: 400;
   font-size: 14px;
 }
+footer .navbar-nav .nav-cust a {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+}
 
 /*# sourceMappingURL=footer.css.map */

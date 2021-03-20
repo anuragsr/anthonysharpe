@@ -1,3 +1,7 @@
+body.contact .hide-contact {
+  display: none;
+}
+
 .ctn-contact .content {
   display: flex;
   flex-direction: column;

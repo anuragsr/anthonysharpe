@@ -1,6 +1,8 @@
 @import './vars';
 @import './include-media';
 
+body.contact .hide-contact{ display: none; }
+
 .ctn-contact{
   .content {
     display: flex;
