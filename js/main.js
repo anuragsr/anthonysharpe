@@ -44,7 +44,7 @@ const l = console.log.bind(window.console)
     case 'contact': 
 
       // Initialize grid
-      grid = new Grid(container.querySelector('.grid'))
+      // grid = new Grid(container.querySelector('.grid'))
     break;
 
     case 'legal':

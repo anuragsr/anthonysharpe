@@ -120,6 +120,8 @@ body.work .hide-work{ display: none; }
     pointer-events: none;
     opacity: 0;
     grid-area: griditem-center;
+    filter: grayscale(100%);
+    transition: filter .5s;
     .img{
       width: calc(100% + 40px);
       height: 100%;
@@ -166,6 +168,7 @@ body.work .hide-work{ display: none; }
   
   .grid__item--center {
     grid-area: griditem-center;
+    filter: grayscale(0%);
   }
   
   .grid__item--right {

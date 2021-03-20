@@ -4,6 +4,10 @@
   align-items: flex-start;
 }
 
+body.legal .hide-home {
+  display: none;
+}
+
 .ctn-legal {
   flex-direction: column;
 }

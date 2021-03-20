@@ -101,6 +101,8 @@ body.work .hide-work {
   pointer-events: none;
   opacity: 0;
   grid-area: griditem-center;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
 }
 .ctn-work .grid__item .img {
   width: calc(100% + 40px);
@@ -142,6 +144,7 @@ body.work .hide-work {
 }
 .ctn-work .grid__item--center {
   grid-area: griditem-center;
+  filter: grayscale(0%);
 }
 .ctn-work .grid__item--right {
   grid-area: griditem-right;
