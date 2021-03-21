@@ -52,27 +52,9 @@
             <h3>7.2 Finalit&eacute; des donn&eacute;es collect&eacute;es</h3>
             <p><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>est susceptible de traiter tout ou partie des donn&eacute;es :</p>
             <ul>
-              <li>
-                <ul>
-                  <li>pour permettre la navigation sur le Site et la gestion et la tra&ccedil;abilit&eacute; des prestations et services command&eacute;s par l&rsquo;utilisateur : donn&eacute;es de connexion et d&rsquo;utilisation du Site, facturation, historique des commandes, etc.</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>pour pr&eacute;venir et lutter contre la fraude informatique (spamming, hacking&hellip;) : mat&eacute;riel informatique utilis&eacute; pour la navigation, l&rsquo;adresse IP, le mot de passe (hash&eacute;)</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>pour am&eacute;liorer la navigation sur le Site : donn&eacute;es de connexion et d&rsquo;utilisation</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
+              <li>pour permettre la navigation sur le Site et la gestion et la tra&ccedil;abilit&eacute; des prestations et services command&eacute;s par l&rsquo;utilisateur : donn&eacute;es de connexion et d&rsquo;utilisation du Site, facturation, historique des commandes, etc.</li>
+              <li>pour pr&eacute;venir et lutter contre la fraude informatique (spamming, hacking&hellip;) : mat&eacute;riel informatique utilis&eacute; pour la navigation, l&rsquo;adresse IP, le mot de passe (hash&eacute;)</li>
+              <li>pour am&eacute;liorer la navigation sur le Site : donn&eacute;es de connexion et d&rsquo;utilisation</li>
               <li>pour mener des enqu&ecirc;tes de satisfaction facultatives sur<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>: adresse email</li>
               <li>pour mener des campagnes de communication (sms, mail) : num&eacute;ro de t&eacute;l&eacute;phone, adresse email</li>
             </ul>
@@ -80,46 +62,12 @@
             <h3>7.3 Droit d&rsquo;acc&egrave;s, de rectification et d&rsquo;opposition</h3>
             <p>Conform&eacute;ment &agrave; la r&eacute;glementation europ&eacute;enne en vigueur, les Utilisateurs de<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>disposent des droits suivants :</p>
             <ul>
-              <li>
-                <ul>
-                  <li>droit d&rsquo;acc&egrave;s (article 15 RGPD) et de rectification (article 16 RGPD), de mise &agrave; jour, de compl&eacute;tude des donn&eacute;es des Utilisateurs droit de verrouillage ou d&rsquo;effacement des donn&eacute;es des Utilisateurs &agrave; caract&egrave;re personnel (article 17 du RGPD), lorsqu&rsquo;elles sont inexactes, incompl&egrave;tes, &eacute;quivoques, p&eacute;rim&eacute;es, ou dont la collecte, l&rsquo;utilisation, la communication ou la conservation est interdite</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>droit de retirer &agrave; tout moment un consentement (article 13-2c RGPD)</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>droit &agrave; la limitation du traitement des donn&eacute;es des Utilisateurs (article 18 RGPD)</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>droit d&rsquo;opposition au traitement des donn&eacute;es des Utilisateurs (article 21 RGPD)</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>droit &agrave; la portabilit&eacute; des donn&eacute;es que les Utilisateurs auront fournies, lorsque ces donn&eacute;es font l&rsquo;objet de traitements automatis&eacute;s fond&eacute;s sur leur consentement ou sur un contrat (article 20 RGPD)</li>
-                </ul>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <ul>
-                  <li>droit de d&eacute;finir le sort des donn&eacute;es des Utilisateurs apr&egrave;s leur mort et de choisir &agrave; qui<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>devra communiquer (ou non) ses donn&eacute;es &agrave; un tiers qu&rsquo;ils aura pr&eacute;alablement d&eacute;sign&eacute;</li>
-                </ul>
-              </li>
+              <li>droit d&rsquo;acc&egrave;s (article 15 RGPD) et de rectification (article 16 RGPD), de mise &agrave; jour, de compl&eacute;tude des donn&eacute;es des Utilisateurs droit de verrouillage ou d&rsquo;effacement des donn&eacute;es des Utilisateurs &agrave; caract&egrave;re personnel (article 17 du RGPD), lorsqu&rsquo;elles sont inexactes, incompl&egrave;tes, &eacute;quivoques, p&eacute;rim&eacute;es, ou dont la collecte, l&rsquo;utilisation, la communication ou la conservation est interdite</li>
+              <li>droit de retirer &agrave; tout moment un consentement (article 13-2c RGPD)</li>
+              <li>droit &agrave; la limitation du traitement des donn&eacute;es des Utilisateurs (article 18 RGPD)</li>
+              <li>droit d&rsquo;opposition au traitement des donn&eacute;es des Utilisateurs (article 21 RGPD)</li>
+              <li>droit &agrave; la portabilit&eacute; des donn&eacute;es que les Utilisateurs auront fournies, lorsque ces donn&eacute;es font l&rsquo;objet de traitements automatis&eacute;s fond&eacute;s sur leur consentement ou sur un contrat (article 20 RGPD)</li>
+              <li>droit de d&eacute;finir le sort des donn&eacute;es des Utilisateurs apr&egrave;s leur mort et de choisir &agrave; qui<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>devra communiquer (ou non) ses donn&eacute;es &agrave; un tiers qu&rsquo;ils aura pr&eacute;alablement d&eacute;sign&eacute;</li>
             </ul>
             <p>D&egrave;s que<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>a connaissance du d&eacute;c&egrave;s d&rsquo;un Utilisateur et &agrave; d&eacute;faut d&rsquo;instructions de sa part,<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>s&rsquo;engage &agrave; d&eacute;truire ses donn&eacute;es, sauf si leur conservation s&rsquo;av&egrave;re n&eacute;cessaire &agrave; des fins probatoires ou pour r&eacute;pondre &agrave; une obligation l&eacute;gale.</p>
             <p>Si l&rsquo;Utilisateur souhaite savoir comment<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>utilise ses Donn&eacute;es Personnelles, demander &agrave; les rectifier ou s&rsquo;oppose &agrave; leur traitement, l&rsquo;Utilisateur peut contacter<span>&nbsp;</span><a href="https://www.antonysharpe.fr/">https://www.antonysharpe.fr</a><span>&nbsp;</span>par &eacute;crit &agrave; l&rsquo;adresse suivante :</p>

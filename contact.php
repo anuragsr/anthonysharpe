@@ -11,11 +11,12 @@
     <div class="ctn-outer" data-barba="wrapper">
       <!-- This section changes on link navigation -->
       <main class="ctn-contact" data-barba="container" data-barba-namespace="contact">
-        <div class="content">
-          <div class="ctn-bg">
-            <div class="ctn-bg-inner"></div>
-            <div class="vid-ol"></div>
-          </div> 
+         <div class="content">
+          <div class="grid grid--img">
+            <div class="grid__item pos-1"><div class="grid__item-img" style="background-image:url(img/contact/1.jpg);"></div></div>
+            <!-- <div class="grid__item pos-2"><div class="grid__item-img" style="background-image:url(img/contact/2.jpg);"></div></div>
+            <div class="grid__item pos-3"><div class="grid__item-img" style="background-image:url(img/contact/3.jpg);"></div></div>              -->
+          </div>
           <div class="content__title">
             <div>PWL AGENCY</div>
             <div class="info mt-4">
