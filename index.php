@@ -19,18 +19,10 @@
         <div class="ctn-content">
           <div class="tickerwrapper">
             <ul class="list">
-              <li class="listitem">
-                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
-              </li>
-              <li class="listitem">
-                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
-              </li>
-              <li class="listitem">
-                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
-              </li>
-              <li class="listitem">
-                <span>&nbsp;ANTHONY SHARPE<!-- <span class="stroke">/</span> --></span>
-              </li>
+              <li class="listitem"><span>&nbsp;ANTHONY SHARPE</span></li>
+              <li class="listitem"><span>&nbsp;ANTHONY SHARPE</span></li>
+              <li class="listitem"><span>&nbsp;ANTHONY SHARPE</span></li>
+              <li class="listitem"><span>&nbsp;ANTHONY SHARPE</span></li>
             </ul>
           </div>
           <h2>Director / Producer</h2>

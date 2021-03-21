@@ -12,9 +12,10 @@
     <ul class="navbar-nav mr-auto">        
     </ul>
     <ul class="navbar-nav my-2 my-lg-0">
-      <li class="nav-item hide-contact"><a class="nav-link" href="./work.php">WORK</a></li>
+      <li class="nav-item"><a class="nav-link" href="./work.php">WORK</a></li>
+      <!-- <li class="nav-item hide-contact"><a class="nav-link" href="./work.php">WORK</a></li>
       <li class="nav-item dot hide-work hide-contact"><a class="nav-link" href="#">•</a></li>
-      <li class="nav-item hide-work"><a class="nav-link" href="./contact.php">CONTACT</a></li>      
+      <li class="nav-item hide-work"><a class="nav-link" href="./contact.php">CONTACT</a></li>       -->
     </ul>
   </div>
 </nav>
