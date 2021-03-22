@@ -136,11 +136,11 @@ body.work .hide-work {
 .ctn-work .grid__item--center,
 .ctn-work .grid__item--left,
 .ctn-work .grid__item--right {
-  opacity: 1;
   cursor: pointer;
 }
 .ctn-work .grid__item--left {
   grid-area: griditem-left;
+  transition: opacity 0.5s;
 }
 .ctn-work .grid__item--center {
   grid-area: griditem-center;
@@ -148,6 +148,7 @@ body.work .hide-work {
 }
 .ctn-work .grid__item--right {
   grid-area: griditem-right;
+  transition: opacity 0.5s;
 }
 .ctn-work .grid__item--cursor {
   pointer-events: auto;

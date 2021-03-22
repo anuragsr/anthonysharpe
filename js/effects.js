@@ -85,30 +85,33 @@ class Slide {
       });
   }
   setCenter() {
-      this.isCenter = true;
-      this.DOM.el.classList.add('grid__item--center');
-      this.DOM.title.classList.add('grid__item--center');
-      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+    this.isCenter = true;
+    this.DOM.el.classList.add('grid__item--center');
+    this.DOM.title.classList.add('grid__item--center');
+    TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
   }
   setRight() {
-      this.isRight = this.isCenter = false;
-      this.isLeft = true;
-      this.DOM.el.classList.add('grid__item--right');
-      this.DOM.title.classList.add('grid__item--right');
-      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+    this.isRight = this.isCenter = false;
+    this.isLeft = true;
+    this.DOM.el.classList.add('grid__item--right');
+    this.DOM.title.classList.add('grid__item--right');
+    TweenMax.set([this.DOM.el, this.DOM.title], {opacity: .5});
   }
   setLeft() {
-      this.isLeft = this.isCenter = false;
-      this.isRight = true;
-      this.DOM.el.classList.add('grid__item--left');
-      this.DOM.title.classList.add('grid__item--left');
-      TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 1});
+    this.isLeft = this.isCenter = false;
+    this.isRight = true;
+    this.DOM.el.classList.add('grid__item--left');
+    this.DOM.title.classList.add('grid__item--left');
+    TweenMax.set([this.DOM.el, this.DOM.title], {opacity: .5});
   }
   reset() {
-      TweenMax.set([this.DOM.el, this.DOM.imgWrap, this.DOM.number, this.DOM.subtitle, this.DOM.title], {transform: 'none'});
+    TweenMax.set([this.DOM.el, this.DOM.imgWrap, this.DOM.number, this.DOM.subtitle, this.DOM.title], {transform: 'none'});
+    
+    if(this.DOM.el.classList.contains('grid__item--left') || this.DOM.el.classList.contains('grid__item--right'))
       TweenMax.set([this.DOM.el, this.DOM.title], {opacity: 0});
-      this.DOM.title.classList = 'grid__item grid__item--title';
-      this.DOM.el.classList = 'grid__item grid__item--slide';
+
+    this.DOM.title.classList = 'grid__item grid__item--title';
+    this.DOM.el.classList = 'grid__item grid__item--slide';
   }
   animateElementsOut(contentItem) {
       return new Promise((resolve, reject) => {

@@ -19,7 +19,7 @@
                 <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
                 <div class="img img--content">
                   <div class="vid-ol"></div>
-                  <video loop="true" muted>
+                  <video loop="true">
                     <source src="<?php echo $project['video-pr']; ?>" type="video/mp4" />
                   </video>
                 </div>

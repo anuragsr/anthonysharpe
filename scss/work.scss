@@ -158,12 +158,13 @@ body.work .hide-work{ display: none; }
   .grid__item--center,
   .grid__item--left,
   .grid__item--right {
-    opacity: 1;
+    // opacity: 1;
     cursor: pointer;
   }
   
   .grid__item--left {
     grid-area: griditem-left;
+    transition: opacity .5s;
   }
   
   .grid__item--center {
@@ -173,6 +174,7 @@ body.work .hide-work{ display: none; }
   
   .grid__item--right {
     grid-area: griditem-right;
+    transition: opacity .5s;
   }
   
   .grid__item--cursor {
