@@ -123,3 +123,7 @@ input:focus{ outline: none; }
   z-index: 2;
   background-color: rgba($b, .4);
 }
+
+li.nav-item{
+  text-transform: uppercase;
+}

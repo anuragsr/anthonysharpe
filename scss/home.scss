@@ -14,6 +14,10 @@ body.home .hide-home{ display: none; }
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    // width: 293.777778vh;
+    // min-height: 66.25vw;
+    // top: 40%;
   }
   .ctn-content{
     @include pa(0, 0);

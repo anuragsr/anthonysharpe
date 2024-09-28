@@ -365,7 +365,8 @@ body.work .hide-work{ display: none; }
       font-size: 8vw;
     }
     .content__item-copy {
-      max-width: 240px;
+      max-width: 500px;
+      // max-width: 240px;
       // justify-self: end;
       text-align: right;
       @include pa(25, '', '', 0, 'vh');
@@ -398,7 +399,7 @@ body.work .hide-work{ display: none; }
         
         // Play Button
         // cursor: url("../img/play.png") 21 21, pointer;
-        cursor: url("../img/play.svg") 50 50, pointer;
+        cursor: url("../img/play.png") 50 50, pointer;
         video{
           position: relative;
           z-index: 1;
@@ -413,7 +414,7 @@ body.work .hide-work{ display: none; }
           
           // Pause Button
           // cursor: url("../img/pause.png") 21 21, pointer;
-          cursor: url("../img/pause.svg") 65 45, pointer;
+          cursor: url("../img/pause.png") 65 45, pointer;
         }
       }
     }

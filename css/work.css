@@ -254,7 +254,7 @@ body.work .hide-work {
     top: 0;
   }
   .ctn-work .grid--interaction {
-    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-columns: repeat(3, 33.3333333333%);
     grid-column-gap: 0;
   }
   .ctn-work .number {
@@ -295,15 +295,15 @@ body.work .hide-work {
     font-size: 8vw;
   }
   .ctn-work .content__item-copy {
-    max-width: 240px;
+    max-width: 500px;
     text-align: right;
     position: absolute;
     top: 25vh;
     right: 0vh;
   }
   .ctn-work .grid__item--cursor.grid__item--left::after,
-.ctn-work .grid__item--cursor.grid__item--right::after,
-.ctn-work .img-wrap--content::after {
+  .ctn-work .grid__item--cursor.grid__item--right::after,
+  .ctn-work .img-wrap--content::after {
     display: none;
   }
   .ctn-work .grid__item--cursor.grid__item--left {
@@ -323,7 +323,7 @@ body.work .hide-work {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: url("../img/play.svg") 50 50, pointer;
+    cursor: url("../img/play.png") 50 50, pointer;
   }
   .ctn-work .img-wrap--content .img--content video {
     position: relative;
@@ -333,13 +333,11 @@ body.work .hide-work {
   }
   .ctn-work .img-wrap--content.playing .img--content {
     width: 100%;
-    cursor: url("../img/pause.svg") 65 45, pointer;
+    cursor: url("../img/pause.png") 65 45, pointer;
   }
-
   .js .ctn-work .content__item {
     height: 100%;
   }
-
   .js .ctn-work .content__item--current {
     top: 0;
   }

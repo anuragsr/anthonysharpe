@@ -16,11 +16,9 @@ body.home .hide-home {
 .ctn-home video {
   position: relative;
   z-index: 1;
-  width: 177.77777778vh;
-  /* 100 * 16 / 9 */
+  width: 177.77777778vh; /* 100 * 16 / 9 */
   min-width: 100%;
-  min-height: 56.25vw;
-  /* 100 * 9 / 16 */
+  min-height: 56.25vw; /* 100 * 9 / 16 */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

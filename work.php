@@ -16,7 +16,6 @@
           <?php foreach($projects as $project){ ?>
             <article class="content__item">
               <div class="img-wrap img-wrap--content">
-                <!-- <div class="img img--content" style="background-image: url(img/work/1.jpg);"></div> -->
                 <div class="img img--content">
                   <div class="vid-ol"></div>
                   <video loop="true">
@@ -32,7 +31,6 @@
                 <p class="content__item-copy-text">
                   <?php echo $project["desc"]; ?>
                 </p>
-                <!-- <a href="#" class="content__item-copy-more">more +</a> -->
               </div>
             </article>
           <?php } ?>                    
@@ -45,7 +43,6 @@
             <figure class="grid__item grid__item--slide">
               <span class="number">0<?php echo ($key + 1); ?></span>
               <div class="img-wrap">
-                <!-- <div class="img" style="background-image: url(img/work/1.gif);"></div> -->
                 <video class="img" loop="true" muted>
                   <source src="<?php echo $project['video-sc']; ?>" type="video/mp4" />
                 </video>
